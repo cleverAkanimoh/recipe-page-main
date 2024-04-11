@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Young Serif";
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+    font-family: "Outfit";
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: hsl(30, 10%, 34%);
+  font-size: 16px;
+  font-family: "Outfit";
+  font-weight: 400;
+  background-color: hsl(30, 54%, 90%);
+  line-height: 1.65;
+}
+
+li i {
+  width: 4px;
+  height: 4px;
+  background-color: hsl(30, 10%, 34%);
+  margin-right: 1.1rem;
+  border-radius: 100%;
+}
+
+#preparation i {
+  background-color: hsl(332, 51%, 32%);
+}
+
+li:not(#instructions li) {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+section,
+article,
+table {
+  width: 85%;
+  padding: 2rem 0;
+}
+
+h1 {
+  color: hsl(24, 5%, 18%);
+  font-size: 2.2rem;
+  font-family: "Young Serif";
+  line-height: 1;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+}
+
+#preparation {
+  background-color: hsl(330, 100%, 98%);
+
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+h3 {
+  color: hsl(332, 51%, 32%);
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+#instructions {
+    border-top: 1px solid hsl(30, 18%, 87%);
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+ol li{
+margin-top: 1rem;
+}
+
+ol, #instructions li {
+ padding: 0 0 0 1rem;
+}
+
+tr {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+th {
+    text-align:left;
+    padding: 1rem 0 1rem 2rem;
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+td {
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 1rem 0;
+}
+
+@media screen and (min-width:700px) {
+    body {
+        padding: 3rem 0;
+    }
+
+    main {
+        border-radius: 0.45rem;
+        width: 600px;
+    }
+
+    figure {
+        width: 85%;
+        margin-top: 3rem;
+    }
+
+    img {
+        border-radius: 0.45rem;
+    }
+}
